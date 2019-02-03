@@ -57,9 +57,8 @@ main {
 
     .icons{
        margin-top:1rem;
-    }
 
-    a {
+       a {
         padding: 0.4rem;
       }
       a:hover {
@@ -67,5 +66,6 @@ main {
         @include easeOut();
       }
     }
+}
 
 

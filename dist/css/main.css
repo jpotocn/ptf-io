@@ -35,8 +35,8 @@ main {
     color: #AA3939; }
   main .icons {
     margin-top: 1rem; }
-  main a {
-    padding: 0.4rem; }
-  main a:hover {
-    color: #AA3939;
-    transition: 0.5s; }
+    main .icons a {
+      padding: 0.4rem; }
+    main .icons a:hover {
+      color: #AA3939;
+      transition: 0.5s; }
