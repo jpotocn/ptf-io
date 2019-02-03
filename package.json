@@ -9,6 +9,7 @@
   "author": "Jan",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.2.1",
     "node-sass": "^4.11.0"
   }
 }
