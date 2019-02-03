@@ -1,5 +1,5 @@
 $primary-color:#444;
-$heading-one: #fff;
+$heading: #fff;
 
 body {
     background: $primary-color;
@@ -9,11 +9,16 @@ body {
     line-height: 1.5;
 }
 
+* { 
+    box-sizing: border-box;
+}
+
 //Headings
 h1,h2,h3{
     margin:0;
     font-weight:400;
-    
+    color:$heading;
+
     &.lg-heading {
         font-size: 6rem; 
     }
