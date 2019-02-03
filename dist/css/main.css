@@ -14,3 +14,29 @@ h1, h2, h3 {
   color: #fff; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 6rem; }
+  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    font-size: 1.5rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5); }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+main {
+  padding: 4rem;
+  height: 100%; }
+  main .text-secondary {
+    color: #AA3939; }
+  main .icons {
+    margin-top: 1rem; }
+  main a {
+    padding: 0.4rem; }
+  main a:hover {
+    color: #AA3939;
+    transition: 0.5s; }

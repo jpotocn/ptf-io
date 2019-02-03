@@ -1,6 +1,12 @@
 $primary-color:#444;
-$heading: #fff;
+$secondary-color:#AA3939;
+$text-color: #fff;
 
+@mixin easeOut {
+    transition: 0.5s;
+}
+
+//BODY
 body {
     background: $primary-color;
     height: auto;
@@ -13,14 +19,53 @@ body {
     box-sizing: border-box;
 }
 
-//Headings
+//HEADINGS
 h1,h2,h3{
     margin:0;
     font-weight:400;
-    color:$heading;
+    color: $text-color;
 
     &.lg-heading {
         font-size: 6rem; 
     }
+
+    &.sm-heading {
+        font-size: 1.5rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color,2), 0.5);
+    }
 }
+
+a {
+    color:$text-color;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;    
+}
+
+main {
+    padding: 4rem;
+    height: 100%;
+
+    .text-secondary {
+        color:$secondary-color;
+    }
+
+    .icons{
+       margin-top:1rem;
+    }
+
+    a {
+        padding: 0.4rem;
+      }
+      a:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+
 
