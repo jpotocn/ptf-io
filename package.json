@@ -5,7 +5,6 @@
   "main": "index.js",
   "homepage": "https://jpotocn@github.io/portfolio/",
   "scripts": {
-    "sass": "sass --sourcemap=none --watch style.scss:style.css",
     "deploy":"gh-pages -d dist"
   },
   "author": "Jan",
