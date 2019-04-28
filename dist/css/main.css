@@ -23,6 +23,25 @@ body#bg-img:after {
   background: rgba(68, 68, 68, 0.8);
 }
 
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu-btn .menu-burger {
+  width: 23px;
+  height: 2px;
+  margin: 0 0 5px 0;
+  background: white;
+  opacity: 0.6;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
