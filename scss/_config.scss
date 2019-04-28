@@ -9,6 +9,10 @@ $background-opacity: 0.8;
   transition: 0.5s;
 }
 
+@mixin menuEaseOut {
+  transition: 0.5s;
+}
+
 @mixin background {
   @if $show-home-image {
     &#bg-img {
