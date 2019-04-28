@@ -4,5 +4,5 @@
 <p>Each time you write a line of code in sass file, it has to be compiled to css format. You can do that with the script, located in package.json file. Use the command: npm-run [script], in our case; 
 'npm-run sass' </p>
 
-<h2>Deploy<h2>
-<p>If you want to deploy the page to gh pages just use the command 'npm run deploy'</p>
+<h2>Deploy</h2>
+<p>To deploy the page to gh pages use the command 'npm run deploy'</p>
