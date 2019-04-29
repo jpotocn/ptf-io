@@ -5,14 +5,11 @@
     right:35px;
     top:35px;
     cursor: pointer;
-    opacity: 0.6;
-    @include easeOut();
 
-    .menu-burger{
+    .menu-line{
         width: 23px;
         height: 2px;
         margin: 0 0 5px 0;
         background: white;
-        opacity: 0.6;
     }
 }
