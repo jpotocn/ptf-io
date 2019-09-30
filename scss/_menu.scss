@@ -1,3 +1,4 @@
+
 //Menu Button
 .menu-btn{
     position: absolute;
@@ -5,6 +6,7 @@
     right:35px;
     top:35px;
     cursor: pointer;
+    @include easeOut;
 
     .menu-line{
         width: 23px;
@@ -12,4 +14,15 @@
         margin: 0 0 5px 0;
         background: white;
     }
+    //Rotate into Xž
+    &.close {
+        transform: rotate(180deg);
+
+        .menu-line{
+            
+        }
+    }
+
 }
+
+
