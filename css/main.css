@@ -45,6 +45,10 @@ body#bg-img:after {
           transform: rotate(180deg);
 }
 
+.menu-btn.close .menu-line:nth-child(1) {
+  color: red;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
