@@ -19,7 +19,17 @@
         transform: rotate(180deg);
 
         .menu-line{
+            //1st line = show
             
+            &:nth-child(1){
+                color: red;
+            }
+
+            //2nd line = hide
+
+            
+
+            //3rd line = show
         }
     }
 
