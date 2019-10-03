@@ -1,38 +1,113 @@
-
 //Menu Button
-.menu-btn{
-    position: absolute;
-    z-index: 3;
-    right:35px;
-    top:35px;
-    cursor: pointer;
-    @include easeOut;
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  @include easeOut;
 
-    .menu-line{
-        width: 23px;
-        height: 2px;
-        margin: 0 0 5px 0;
-        background: white;
+  .menu-line {
+    width: 23px;
+    height: 2px;
+    margin: 0 0 5px 0;
+    background: white;
+  }
+
+  //Rotate into X
+  &.close {
+    transform: rotate(180deg);
+
+    .menu-line {
+      //1st line = show
+
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(-2px, -2px);
+      }
+
+      //2nd line = hide
+      &:nth-child(2) {
+        display: none;
+      }
+      //3rd line = show
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+      }
     }
-    //Rotate into Xž
-    &.close {
-        transform: rotate(180deg);
-
-        .menu-line{
-            //1st line = show
-            
-            &:nth-child(1){
-                color: red;
-            }
-
-            //2nd line = hide
-
-            
-
-            //3rd line = show
-        }
-    }
-
+  }
 }
 
+// Side menu
 
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background: darken($primary-color, 5);
+    list-style-type: none;
+    transform: translate3d(100%, 0, 0px); //initial menu value
+    @include easeOut;
+
+    &.show {
+      //Slide from the left
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  //Branding
+
+  &-branding,
+  &-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &-branding {
+    transform: translate3d(-100%, 0, 0); 
+    background-color:darken($menu-branding-color,2);
+    @include easeOut;
+    
+    &.show {
+      //Slide from the right
+      transform: translate3d(0, 0, 0);
+    }
+
+    .portrait{
+        width: 250px;
+        height: 250px;
+        background: url('../img/portrait.png');
+        border-radius: 50%;
+        border: solid 3px $secondary-color;
+        z-index: -1;
+        position:relative;
+    }
+   
+  }
+  .link{
+      
+      text-transform: uppercase;
+      position: relative;
+      font-size: 25px;
+      font-weight: 450;
+  }
+  .link:hover{
+    color:$secondary-color;
+    @include easeOut;
+  }
+ }
