@@ -130,17 +130,31 @@ body#bg-img:after {
   position: relative;
 }
 
-.menu .link {
+.menu .nav-item {
+  padding: 12px;
+}
+
+.menu .nav-item .nav-link {
   text-transform: uppercase;
   position: relative;
   font-size: 25px;
   font-weight: 450;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.menu .link:hover {
+.menu .nav-item .nav-link:hover {
   color: #aa3939;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    text-align: center;
+  }
+  main .lg-heading {
+    line-height: 1;
+  }
 }
 
 * {
