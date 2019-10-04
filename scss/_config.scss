@@ -47,29 +47,25 @@ body {
 }
 
 @mixin sm {
-  
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     @content;
   }
 }
 
 @mixin md {
-  
   @media screen and (max-width: 800px) {
     @content;
   }
 }
 
 @mixin lg {
-  
-  @media screen and (max-width: 801px) and (max-width: 1200px) {
+  @media screen and (min-width: 801px) and (max-width: 1200px) {
     @content;
   }
 }
 
 @mixin xl {
-  
-  @media screen and (max-width: 1600px) {
+  @media screen and (min-width: 1201px) {
     @content;
   }
 }

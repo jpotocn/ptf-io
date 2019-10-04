@@ -148,12 +148,46 @@ body#bg-img:after {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 600px) {
+  main#home h1 {
+    margin-top: 10vh;
+  }
+}
+
 @media screen and (max-width: 800px) {
   main {
     text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   main .lg-heading {
     line-height: 1;
+  }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  ul.menu-nav.show,
+  div.menu-branding.show {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .menu-nav {
+    height: 75vh;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    font-size: 24px;
+  }
+  .menu-branding {
+    height: 25vh;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  .menu-branding .portrait {
+    background: url("../img/portrait.png");
   }
 }
 
