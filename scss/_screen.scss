@@ -1,0 +1,26 @@
+
+// mobile devices
+@include sm{
+
+}
+
+//tablets 
+@include md{
+    main{
+        text-align:center;
+        
+        .lg-heading{
+            line-height:1;
+        }
+    }
+}
+
+//desktops
+@include lg{
+   
+}
+
+//widescreens
+@include xl{
+    
+}
