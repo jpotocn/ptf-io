@@ -14,6 +14,7 @@
         
         .lg-heading{
             line-height:1;
+            font-size: 5rem;
         }
     }
 
@@ -42,6 +43,17 @@
         .portrait{
             background:url("../img/portrait.png");
         }
+    }
+
+    .about-info{
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'jobfirst'
+        'jobsecond'
+        'jobthird';
+        
+        grid-template-columns: 1fr;
     }
 }
 
