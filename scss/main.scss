@@ -1,6 +1,6 @@
 @import "config";
 @import "menu";
-@import "screen";
+
 
 * {
   box-sizing: border-box;
@@ -9,7 +9,8 @@
 //HEADINGS
 h1,
 h2,
-h3 {
+h3,
+h6 {
   margin: 0;
   font-weight: 400;
   color: $text-color;
@@ -28,6 +29,10 @@ h3 {
 a {
   color: $text-color;
   text-decoration: none;
+}
+
+p{
+  color: $text-color;
 }
 
 header {
@@ -62,3 +67,58 @@ main {
     }
   }
 }
+
+
+
+//ABOUT PAGE
+.about-info{
+  display: grid;
+ grid-template-areas: 
+ 'bioimage bio bio' 
+ 'jobfirst jobsecond jobthird';
+ grid-template-columns: repeat(3, 1fr);
+ grid-gap: 30px;
+}
+
+.bio-image{
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: $secondary-color 3px solid;
+  
+ 
+}
+
+.about-copy{
+  text-align: center;
+  color: $text-color;
+  background: rgba(53, 53, 53, 0.5);
+  padding: 1rem;
+
+}
+
+.bio{
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+
+.job{
+  background-color: rgba(56, 55, 55, 0.747);
+  border-bottom: 5px solid $secondary-color;
+  padding: 0.8rem;
+
+}
+
+.job-first{
+  grid-area: jobfirst;
+}
+
+.job-second{
+  grid-area: jobsecond;
+}
+
+.job-third{
+  grid-area: jobthird;
+}
+
+@import "screen";
