@@ -227,7 +227,7 @@ main .icons a:hover {
 .about-info {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'bioimage bio bio'  'jobfirst jobsecond jobthird';
+      grid-template-areas: 'bioimage bio bio'  'jobfirst jobfirst jobfirst' 'jobsecond jobsecond jobsecond' 'jobthird jobthird jobthird' 'jobfourth jobfourth jobfourth' 'jobfifth jobfifth jobfifth' 'jobsixth jobsixth jobsixth' 'jobseventh jobseventh jobseventh';
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
@@ -266,19 +266,68 @@ main .icons a:hover {
 .job-first {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: jobfirst;
 }
 
 .job-second {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: jobsecond;
 }
 
 .job-third {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: jobthird;
+}
+
+.job-fourth {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: jobfourth;
+}
+
+.job-fifth {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: jobfifth;
+}
+
+.job-sixth {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: jobsixth;
+}
+
+.job-seventh {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: jobseventh;
+}
+
+.projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.projects img {
+  width: 100%;
+}
+
+.projects img:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 600px) {
