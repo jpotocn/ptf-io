@@ -345,7 +345,7 @@ main .icons a:hover {
   }
   main .lg-heading {
     line-height: 1;
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   ul.menu-nav,
   div.menu-branding {
@@ -373,7 +373,7 @@ main .icons a:hover {
     background: url("../img/portrait.png");
   }
   .about-info {
-        grid-template-areas: 'bioimage' 'bio' 'jobfirst' 'jobsecond' 'jobthird';
+        grid-template-areas: 'bioimage' 'bio' 'jobfirst' 'jobsecond' 'jobthird' 'jobfourth' 'jobfifth' 'jobsixth' 'jobseventh';
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }

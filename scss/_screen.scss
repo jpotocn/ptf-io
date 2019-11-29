@@ -14,7 +14,9 @@
         
         .lg-heading{
             line-height:1;
-            font-size: 5rem;
+            font-size: 4.5rem;
+
+        
         }
     }
 
@@ -51,7 +53,12 @@
         'bio'
         'jobfirst'
         'jobsecond'
-        'jobthird';
+        'jobthird'
+        'jobfourth'
+        'jobfifth'
+        'jobsixth'
+        'jobseventh';
+
         
         grid-template-columns: 1fr;
     }
